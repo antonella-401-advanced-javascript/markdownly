@@ -10,7 +10,7 @@ function Editor({ markdown, updateMarkdowns }) {
 
 Editor.propTypes = {
   markdown: PropTypes.string.isRequired,
-  updateMarkdowns: PropTypes.func.isRequired
+  updateMarkdowns: PropTypes.func
 };
 
 export default Editor;
