@@ -46,7 +46,7 @@ describe('documentReducer component', () => {
       },
       searchTerm: ''
     };
-   
+
     const action = addTab('1');
     const newState = reducer(state.documentReducer, action);
 
