@@ -1,9 +1,18 @@
-import { createStore } from 'redux';
+/* eslint-disable no-console */
+import { createStore, applyMiddleware } from 'redux';
 import reducer from './reducers/index';
 
-const store = createStore(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const loggerMiddleware = store => next => action => {
+  console.log('in my logger', action, store.getState());
 
-export default store;
+  next(action);
+
+  console.log('current state', store.getState());
+};
+
+export default createStore(
+  reducer,
+  applyMiddleware(
+    loggerMiddleware
+  )
+);
