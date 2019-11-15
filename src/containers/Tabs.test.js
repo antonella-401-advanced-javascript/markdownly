@@ -5,7 +5,10 @@ import store from '../store';
 
 describe('Tabs component', () => {
   it('renders Tabs', () => {
-    const wrapper = shallow(<Tabs store={store}/>);
+    React.useContext = () => ({ store });
+    const wrapper = shallow(<Tabs store={store}/>, {
+      context: { store }
+    });
     expect(wrapper).toMatchSnapshot();
   });
 }); 

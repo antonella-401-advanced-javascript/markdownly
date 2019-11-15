@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component renders Tabs 1`] = `
+<Fragment>
+  <TabDeck
+    handleDelete={[Function]}
+    titles={
+      Array [
+        "default",
+      ]
+    }
+  />
+  <button
+    onClick={[Function]}
+  >
+    ADD
+  </button>
+  <Filter
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    searchTerm=""
+  />
+</Fragment>
+`;
