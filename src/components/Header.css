@@ -1,15 +1,15 @@
-.Header {
-  display: flex;
-  flex-direction: column;
-  background-color: #428bca;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  align-items: center;
-  border: solid 1px black;
+@import url('https://fonts.googleapis.com/css?family=Seaweed+Script&display=swap');
 
+.Header {
+  font-family: 'Seaweed Script', cursive;
+  text-align: center;
 
   h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-    color:  rgb(255, 168, 236);
+    font-size: 45pt;
+    margin: .2em;
+    background-color: rgb(247, 238, 229);
+    border-radius: 5px;
+    border-top: 1px double black;
+    border-bottom: 1px double black;
   }
 }

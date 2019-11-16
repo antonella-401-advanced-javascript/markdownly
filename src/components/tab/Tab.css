@@ -1,6 +1,8 @@
 .Tab {
-
-
+  background-color: black;
+  color: rgb(247, 238, 229);
+  border-radius: 5px;
+  margin: 0 2px;
   input {
     position: absolute;
     left: -99999em;
@@ -10,28 +12,27 @@
     & + label {
       cursor: pointer;
       float: left;
-      border: 1px solid #aaa;
       border-bottom: 0;
-      background-color: #fff;
       margin-right: -1px;
       padding: .5em 1em;
       position: relative;
-          
-      &:hover {
-        background-color: #eee;
-      }
-    }
-  
-    &:checked + label {
-      box-shadow: 0 3px 0 -1px #fff,
-      inset 0 5px 0 -1px #428bca;
-      background-color: rgb(255, 168, 236);
-      border: solid 1px #428bca;
-      z-index: 2;
     }
   }
   button {
-    z-index: 3;
-    margin-right: 5px
+    background-color: black;
+    border-color: black;
+    color: rgb(247, 238, 229);
+    border-radius: 3px;
   }
+  button:hover {
+    background-color: rgb(252, 178, 104);
+    border-color: rgb(252, 178, 104);
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.Tab:hover {
+  background-color: rgb(247, 238, 229);
+  color: black;
 }

@@ -3,8 +3,6 @@
   clear: both;
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #428bca;
   padding: 0 10px;
   position: relative;
-  background-color: gray;
 }
