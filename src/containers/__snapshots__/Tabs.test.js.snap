@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs component renders Tabs 1`] = `
-<Fragment>
+<div
+  className="Button"
+>
   <TabDeck
     handleDelete={[Function]}
     titles={
@@ -11,14 +13,15 @@ exports[`Tabs component renders Tabs 1`] = `
     }
   />
   <button
+    name="add"
     onClick={[Function]}
   >
-    ADD
+    +
   </button>
   <Filter
     handleChange={[Function]}
     handleSubmit={[Function]}
     searchTerm=""
   />
-</Fragment>
+</div>
 `;
