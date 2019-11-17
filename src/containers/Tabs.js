@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getSearchTerm, getMatchTitlesByTitle } from '../selectors/documentSelectors';
 import { addTab, deleteTab, addSearch, getMatchTitle } from '../actions/documentActions';
 import Filter from '../components/filter/Filter';
+import styles from './Tabs.css';
 
 const Tabs = () => {
   const dispatch = useDispatch();
@@ -15,11 +16,11 @@ const Tabs = () => {
   const titles = useSelector(getMatchTitlesByTitle);
   const searchTerm = useSelector(getSearchTerm);
   return (
-    <>
+    <div className={styles.Button}>
       <TabDeck handleDelete={handleDelete} titles={titles} />
-      <button onClick={() => handleClick(titles.length)}>ADD</button>
+      <button name="add" onClick={() => handleClick(titles.length)}>+</button>
       <Filter handleSubmit={handleSubmit} handleChange={handleChange} searchTerm={searchTerm} />
-    </>
+    </div>
   );
 };
 

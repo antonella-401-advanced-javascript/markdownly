@@ -36,6 +36,7 @@ html, body {
 
 body {
 	line-height: 1;
+	background-color: rgba(222, 183, 136, 0.836);
 }
 ol, ul {
 	list-style: none;
