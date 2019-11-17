@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab component renders Tab 1`] = `
+<li
+  className="Tab"
+>
+  <input
+    id="1"
+    name="tabs"
+    type="radio"
+    value="1"
+  />
+  <label
+    htmlFor="1"
+  >
+     TAB 
+    1
+  </label>
+  <button
+    onClick={[Function]}
+    value="1"
+  >
+    X
+  </button>
+</li>
+`;

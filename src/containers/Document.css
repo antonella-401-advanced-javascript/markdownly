@@ -1,0 +1,6 @@
+.Document {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  border-radius: 5px;
+}

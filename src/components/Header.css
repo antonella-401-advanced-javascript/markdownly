@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Seaweed+Script&display=swap');
+
+.Header {
+  font-family: 'Seaweed Script', cursive;
+  text-align: center;
+
+  h1 {
+    font-size: 45pt;
+    margin: .2em;
+    background-color: rgb(247, 238, 229);
+    border-radius: 5px;
+    border-top: 1px double black;
+    border-bottom: 1px double black;
+  }
+}

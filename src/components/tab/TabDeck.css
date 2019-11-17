@@ -1,0 +1,9 @@
+.TabDeck {
+  list-style-type: none;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  margin: 10px 2px 2px 2px;
+}
